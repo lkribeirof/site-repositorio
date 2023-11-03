@@ -293,33 +293,114 @@ span{
     transform: translateY(-6px);
     
 }
+.btn-link{
+    text-decoration: none;
+}
 
 
 footer{
-    display: block;
-    position: relative;
     width: 100%;
-    height: 25vh;
-    background-color: #264944;
-    top: 90vh;
-   
 }
-.contatos{
+.footer-link{
+    text-decoration: none;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link i{
+    font-size: 1.5rem;
+}
+
+#footer_social_media .footer-link:hover{
+    scale: 1.25;
+    text-decoration: none;
+
+}
+
+#footer_content {
+    background-color: #264944;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#footer_social_media .footer-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    color: rgb(180, 178, 178);
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+
+}
+.footer-list .footer-link{
+    color: rgb(180, 178, 178);
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover{
+    color: rgb(0, 250, 167);
+    font-size: 1.5rem;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction:column;
+    gap: 1.5rem;
+}
+#footer_subscribe p{
+    color: rgb(180, 178, 178);
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: rgb(180, 178, 178);
+    border-radius: 4px;
+}
+#input_group input{
+    all: unset;
+    padding: 0.5rem;
+    width: 100%;
+}  
+#input_group button{
+    background-color:rgb(0, 250, 167);
+    border: none;
+    padding: 0  1.25rem;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#input_group button:hover{
+    scale: 1.10;
+}
+#footer_copyright{
     display: flex;
     justify-content: center;
-    
-
+    background-color: #1f3532;
+    color: rgb(180, 178, 178);
+    font-size: 0.9rem;
+    padding: 1.5rem;
 }
-.contatos img{
-    width: 100px;
-    height: 100px;
-}
-
-
-
 @keyframes move {
     0%{margin-top: 0px;}
     50%{margin-top: 40px;}
     100%{margin-top: 0px;}
 
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
 }
