@@ -452,6 +452,7 @@ footer{
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .intro-ft{
         position: relative;
@@ -461,6 +462,8 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         gap: 1.5rem;
     }
     .intro-txt-nome .h1-nome{
@@ -492,5 +495,19 @@ footer{
         justify-content: center;
         align-content: center;
     }
+    .seta{
+        position: absolute;
+        top: 78vh;
+        animation: move infinite 2s ease-in-out;
+    }
+    .setabaixo{
+        width: 80px;
+        height: 80px;
+    }
+    .intro-ft{
+        display: block;
+        visibility: hidden;
+    }
+    
    
 }
