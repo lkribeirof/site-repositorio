@@ -193,7 +193,7 @@ span{
 
 
 .projetos{
-    height: 90vh;
+    height: auto;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
@@ -221,11 +221,8 @@ span{
 }
 .flip-card {
     width: 300px;
-    /* width: 16vw;
-    height: 24vh; */
     height: 450px;
     perspective: 1000px;
-   
 }
 .flip-card:hover .flip-card-inner{
     transform: rotateY(-180deg);
@@ -308,6 +305,7 @@ span{
 
 
 footer{
+    position: relative;
     width: 100%;
 }
 .footer-link{
@@ -468,7 +466,7 @@ footer{
     }
     .intro-txt-nome .h1-nome{
        
-        font-size: 1rem;
+        font-size: 3rem;
     }
 }
 
@@ -511,3 +509,19 @@ footer{
     
    
 }
+
+@media screen and (max-width: 960px) {
+    .flip-card{
+        transform: scale(0.9);
+        margin: 3%;
+        
+    }
+    #container{
+        position: relative;
+        height: auto;
+        
+    }
+    .projetos{
+        height: auto;
+    }
+    }
