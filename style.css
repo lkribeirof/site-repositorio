@@ -224,7 +224,7 @@ span{
     
 }
 .flip-card {
-    width: 300px;
+    width: 325px;
     height: 450px;
     perspective: 1000px;
 }
@@ -245,8 +245,10 @@ span{
 .flip-card-front, .flip-card-back{
     position: absolute;
     backface-visibility: hidden;
-
 }
+
+
+
 .flip-card-front-1{
     position: absolute;
     backface-visibility: hidden;
@@ -276,14 +278,14 @@ span{
 }
 .flip-card-image{
     width: 100%;
-    height: 70%;
+    height: 60%;
     object-fit:fill;
-    border-radius: 30px;
+    border-radius: 30px; 
     
 }
 .flip-card-image-front{
     width: 100%;
-    height: 70%;
+    height: 60%;
     object-fit:fill;
     border-radius: 30px;
     margin-top: 16%;
@@ -306,6 +308,11 @@ span{
 .btn-link{
     text-decoration: none;
 }
+
+.flip-card-back p {
+    height: 450px;
+}
+
 
 
 footer{
