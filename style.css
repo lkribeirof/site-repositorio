@@ -273,22 +273,17 @@ span{
     height: 450px;
     padding: 2px;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
     
 }
-.flip-card-image{
-    width: 100%;
-    height: 60%;
-    object-fit:fill;
-    border-radius: 30px; 
-    
-}
+
+
 .flip-card-image-front{
     width: 100%;
-    height: 60%;
+    height: 70%;
     object-fit:fill;
-    border-radius: 30px;
-    margin-top: 16%;
+    border-radius: 10px;
+    margin-top: 15%;
 }
 .btn-acesso{
     
@@ -296,11 +291,10 @@ span{
     position: relative;
     background-color: #5BA3A3;
     color: black;
-    border-radius: 20px;
+    border-radius: 0 0 10px 10px;
     text-align: center;
     border:2px black;
     top: 5px;
-    border: 4px solid #5BA3A3;
     box-shadow: 0 0 60px rgb(255, 255, 255);
     transform: translateY(-6px);
     
@@ -309,8 +303,14 @@ span{
     text-decoration: none;
 }
 
+.flip-card-back {
+    border-radius: 10px;
+    background-color: #264944;
+}
 .flip-card-back p {
     height: 450px;
+    margin: 10px;
+    text-align: justify;
 }
 
 
@@ -320,24 +320,11 @@ footer{
     width: 100%;
     margin-top: 10%;
 }
-.footer-link{
-    text-decoration: none;
-    transition: all 0.4s;
-}
-#footer_social_media .footer-link i{
-    font-size: 1.5rem;
-}
-
-#footer_social_media .footer-link:hover{
-    scale: 1.25;
-    text-decoration: none;
-
-}
 
 #footer_content {
     background-color: #264944;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
 }
 #footer_contacts h1{
@@ -353,22 +340,21 @@ footer{
     width: 2.5rem;
     color: rgb(180, 178, 178);
 }
-
-.footer-list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-
-}
-.footer-list .footer-link{
-    color: rgb(180, 178, 178);
+.footer-link{
+    text-decoration: none;
     transition: all 0.4s;
 }
-.footer-list .footer-link:hover{
-    color: rgb(0, 250, 167);
+#footer_social_media .footer-link i{
     font-size: 1.5rem;
 }
+
+#footer_social_media .footer-link:hover{
+    scale: 1.25;
+    text-decoration: none;
+
+}
+
+
 
 #footer_subscribe{
     display: flex;
